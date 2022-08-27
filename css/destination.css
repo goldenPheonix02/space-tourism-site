@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("./root.css");
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+main.container {
+  margin: auto;
+  padding: 0 4em;
+  padding-top: 11em;
+}
+
+.image {
+  flex: 3;
+  margin-top: 3em;
+}
+.main-container {
+  display: flex;
+  /* gap: 5em; */
+  justify-content: space-between;
+  color: white;
+}
+.right-container {
+  flex: 2;
+  margin-left: 10%;
+}
+.planet-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+  padding: 0;
+  margin: 1em 0 0;
+}
+.planet-list > li {
+  display: inline;
+  padding: 0.5em 0em;
+  cursor: pointer;
+  position: relative;
+}
+.planet-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 00%;
+  left: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 0%;
+  transition: all 0.3s ease-in-out;
+}
+
+.planet-list li:hover::after {
+  width: 100%;
+}
+
+h1.planet {
+  font-family: var(--bellefair--fnt);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  /* identical to box height */
+  padding-top: 0.3em;
+  color: #ffffff;
+}
+p.info {
+  font-family: var(--barlow--fnt);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 1em;
+  color: #d0d6f9;
+}
+.travel-info {
+  display: flex;
+  gap: 20%;
+}
+.travel-info > div > div:nth-child(1) {
+  font-family: var(--barlow-condensed--fnt);
+  font-style: normal;
+  margin-top: 0.9em;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+
+  color: #d0d6f9;
+}
+.travel-info > div > div:nth-child(2) {
+  margin-top: 0.5em;
+  font-family: var(--bellefair--fnt);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+hr {
+  border: 1px solid #fff;
+  opacity: 1;
+}

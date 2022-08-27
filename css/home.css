@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("./root.css");
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/*  */
+.home-page {
+  padding-top: 17em;
+  margin: auto;
+  width: 75%;
+  color: white;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-space {
+  flex: 1;
+  max-width: 50%;
+  align-self: flex-start;
+}
+.explore {
+  flex: 1;
+  background-color: #fff;
+  height: 280px;
+  color: #000;
+  width: 280px;
+  border-radius: 50%;
+  position: relative;
+}
+.explore-container {
+  margin-right: 2em;
+}
+.explore > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  font-family: var(--bellefair--fnt);
+  letter-spacing: 2px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.so-you {
+  font-family: var(--barlow-condensed--fnt);
+  letter-spacing: 4.72px;
+  font-size: 28px;
+  color: #d0d6f9;
+}
+.space {
+  font-family: var(--bellefair--fnt);
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 172px;
+}
+.home-space .normal {
+  font-family: var(--barlow--fnt);
+  color: #d0d6f9;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 80%;
+}
