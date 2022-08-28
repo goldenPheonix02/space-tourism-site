@@ -78,6 +78,9 @@ p.info {
   padding-bottom: 1em;
   color: #d0d6f9;
 }
+.info-lol {
+  min-height: 335px;
+}
 .travel-info {
   display: flex;
   gap: 20%;
