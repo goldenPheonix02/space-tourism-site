@@ -73,4 +73,10 @@ db.crew = {
   ],
 };
 
+db.tech = {
+  index: "03",
+  title: "SPACE LAUNCH 101",
+  default: 1,
+};
+
 export { db };
