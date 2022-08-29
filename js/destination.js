@@ -17,6 +17,8 @@ function showPlanet(id) {
     $(".main-container").find(`[data-value=${e}]`).text(def[e]);
   });
   $(".image").find("img").attr("src", img_url(def.name));
+  $(`.planet-list li`).removeClass("active");
+  $(`li[data-id=${id}]`).addClass("active");
 }
 
 showPlanet(db.dest.default);

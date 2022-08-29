@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  background-attachment: fixed;
   height: 100vh;
 }
 main.container {
@@ -67,13 +68,15 @@ main.container {
   padding-top: 3em;
   gap: 1.5em;
 }
+
 .option {
   width: 15px;
   height: 15px;
   background-color: rgba(208, 214, 249, 0.1);
   cursor: pointer;
   border-radius: 50%;
+  transition: all 0.4s;
 }
 .option.active {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 1);
 }
